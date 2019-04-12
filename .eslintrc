@@ -1,8 +1,7 @@
 {
-    "parser": "babel-eslint",
     "settings": {
-        "react": {
-            "version": "detect" // React version. "detect" automatically picks the version you have installed.
+        "vue": {
+            "version": "detect"
         }
     },
     "env": {
@@ -13,9 +12,7 @@
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended",
-        "prettier/react"
-        // "airbnb-base"
+        "plugin:vue/recommended"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -25,12 +22,11 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react",
-        "babel",
-        "jsx-a11y"
+        "vue",
+        "babel"
     ],
     "rules": {
-        "react/no-unsafe": "error",
+        "vue/no-unsafe": "error",
         "no-case-declarations": "off",
         "treatUndefinedAsUnspecified": false,
         "no-shadow": [
