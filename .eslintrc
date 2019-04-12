@@ -1,0 +1,48 @@
+{
+    "parser": "babel-eslint",
+    "settings": {
+        "react": {
+            "version": "detect" // React version. "detect" automatically picks the version you have installed.
+        }
+    },
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "prettier/react"
+        // "airbnb-base"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "babel",
+        "jsx-a11y"
+    ],
+    "rules": {
+        "react/no-unsafe": "error",
+        "no-case-declarations": "off",
+        "treatUndefinedAsUnspecified": false,
+        "no-shadow": [
+            "error",
+            {
+                "builtinGlobals": false,
+                "hoist": "never",
+                "allow": [
+                    "child",
+                    "className"
+                ]
+            }
+        ]
+    }
+}
