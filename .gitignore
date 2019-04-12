@@ -3,7 +3,7 @@ node_modules
 storybook-static
 dist
 public
-static
+
 
 # local env files
 .env.local
