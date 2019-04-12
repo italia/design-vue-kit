@@ -1,0 +1,44 @@
+{
+    "settings": {
+        "vue": {
+            "version": "detect"
+        }
+    },
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:vue/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "vue",
+        "babel"
+    ],
+    "rules": {
+        "vue/no-unsafe": "error",
+        "no-case-declarations": "off",
+        "treatUndefinedAsUnspecified": false,
+        "no-shadow": [
+            "error",
+            {
+                "builtinGlobals": false,
+                "hoist": "never",
+                "allow": [
+                    "child",
+                    "className"
+                ]
+            }
+        ]
+    }
+}
